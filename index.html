@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Arsene Nshimiyimana - Professional Full-Stack Web Developer portfolio showcasing modern web applications, cooperative systems, academic tracking, and innovative digital solutions.">
+<meta name="author" content="Arsene Nshimiyimana">
+<title>Arsene Nshimiyimana | Full-Stack Developer & Innovator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<canvas id="particles-canvas"></canvas>
+<div id="toast" class="toast-msg">Copied to clipboard!</div>
+
+<nav>
+  <a href="#hero" class="logo">AR<span>SENE</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">Available for work • Based in Rwanda</div>
+    <h1 class="hero-name">
+      <span class="accent">ARSENE</span><br>
+      <span class="outline" id="typed-role">Web Dev</span>
+      <span class="type-cursor"></span>
+    </h1>
+    <p class="hero-subtitle">I craft full-stack ecosystems — from cooperative management systems & academic tracking to real-time chat platforms & portfolio solutions. Let's digitize your vision.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">Explore Projects</a>
+      <a href="#contact" class="btn-ghost">Connect</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">About Me</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-photo-wrap reveal">
+      <img src="arsene.jpg" alt="Arsene Nshimiyimana - Full-Stack Developer" class="about-photo" id="profileImage" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 400 500\'%3E%3Crect width=\'400\' height=\'500\' fill=\'%2312122a\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'20\' fill=\'%2300f0c8\' text-anchor=\'middle\' dy=\'.3em\'%3EARSENE%3C/text%3E%3C/svg%3E'; this.style.objectFit='cover';">
+      <div class="about-photo-accent"></div>
+    </div>
+    <div class="about-text reveal">
+      <p>Hello! I'm <span class="highlight">Arsene Nshimiyimana</span>, a passionate Full-Stack Developer based in Rwanda. I specialize in building robust web ecosystems including <strong>cooperative management systems (PHP/MySQL)</strong>, <strong>Academic Tracking Information Systems</strong>, modern portfolio platforms, and real-time chat applications with Node.js.</p>
+      <p>My mission: bridge technology and real-world needs. Whether it's managing member contributions, tracking student performance, or enabling instant messaging — I deliver secure, scalable, and intuitive solutions.</p>
+      <p>Driven by clean code and user-centric design, I constantly explore new frameworks to push the boundaries of what the web can do for communities and institutions.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">YEARS EXP.</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">25+</div>
+          <div class="stat-label">PROJECTS</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">CLIENT FOCUS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Skills & Tech</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon"><i class="fab fa-php"></i></div>
+      <div class="skill-name">PHP & MySQL</div>
+      <div class="skill-desc">Cooperative systems, academic portals, CRUD, authentication, and database design.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      <div class="skill-pct">90%</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon"><i class="fab fa-js"></i></div>
+      <div class="skill-name">JavaScript (ES6+)</div>
+      <div class="skill-desc">Interactive front-ends, modern DOM manipulation, async patterns.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      <div class="skill-pct">88%</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+      <div class="skill-name">Node.js & Express</div>
+      <div class="skill-desc">Real-time chat apps, REST APIs, WebSockets (Socket.io), backend services.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      <div class="skill-pct">80%</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon"><i class="fas fa-chalkboard-user"></i></div>
+      <div class="skill-name">Academic Tracking</div>
+      <div class="skill-desc">Student management, grades, attendance, reporting systems (PHP/JS/MySQL).</div>
+      <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      <div class="skill-pct">85%</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon"><i class="fas fa-handshake"></i></div>
+      <div class="skill-name">Cooperative Mgmt</div>
+      <div class="skill-desc">Member contributions, loans, savings tracking, dashboards, PHP & MySQL.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      <div class="skill-pct">87%</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon"><i class="fab fa-react"></i></div>
+      <div class="skill-name">React & Tailwind</div>
+      <div class="skill-desc">Dynamic UI, component libraries, responsive dashboards, portfolio systems.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      <div class="skill-pct">78%</div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #0a2a1a, #0c3a2a);">
+        <i class="fas fa-handshake" style="font-size: 3rem; color: var(--accent);"></i>
+      </div>
+      <div class="project-content">
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">HTML/CSS/JS</span>
+        </div>
+        <div class="project-title">Cooperative Management System</div>
+        <div class="project-desc">Complete digital ecosystem for cooperatives: member registration, share contributions, loan applications, savings tracking, and real-time financial reports. Built with PHP, MySQL, and vanilla JS for seamless cooperative administration.</div>
+        <div class="project-links">
+          <a href="#" class="project-link">Demo →</a>
+          <a href="https://github.com/nshimiyimana-2007" class="project-link">Code →</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #151a30, #1e1f3a);">
+        <i class="fas fa-graduation-cap" style="font-size: 3rem; color: var(--accent2);"></i>
+      </div>
+      <div class="project-content">
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">JS</span>
+        </div>
+        <div class="project-title">Academic Tracking MIS</div>
+        <div class="project-desc">Full-featured Academic Management Information System: student enrollment, grade tracking, course management, attendance records, transcript generation, and role-based access (admin/teacher/student). Optimized for institutions.</div>
+        <div class="project-links">
+          <a href="#" class="project-link">Demo →</a>
+          <a href="https://github.com/nshimiyimana-2007" class="project-link">GitHub →</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #0a1a2a, #102a3a);">
+        <i class="fas fa-comment-dots" style="font-size: 3rem; color: var(--accent);"></i>
+      </div>
+      <div class="project-content">
+        <div class="project-tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">Socket.io</span>
+          <span class="tag">Express</span>
+          <span class="tag">MongoDB</span>
+        </div>
+        <div class="project-title">Real-Time Chat Platform</div>
+        <div class="project-desc">Modern chat application with instant messaging, private rooms, typing indicators, online status, and message history. Built with Node.js, WebSockets, and MongoDB — scalable and responsive across devices.</div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Chat →</a>
+          <a href="https://github.com/nshimiyimana-2007" class="project-link">Repo →</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #2a1a30, #1f1a3a);">
+        <i class="fas fa-briefcase" style="font-size: 3rem; color: var(--accent2);"></i>
+      </div>
+      <div class="project-content">
+        <div class="project-tags">
+          <span class="tag">PHP/MySQL</span>
+          <span class="tag">CSS Grid</span>
+          <span class="tag">JS</span>
+        </div>
+        <div class="project-title">Portfolio Management System</div>
+        <div class="project-desc">Dynamic portfolio CMS for developers/creatives: admin dashboard, project showcase, skill matrix, blog integration, contact form with email. Full CRUD for managing personal brand and work samples efficiently.</div>
+        <div class="project-links">
+          <a href="#" class="project-link">Preview →</a>
+          <a href="https://github.com/nshimiyimana-2007" class="project-link">Source →</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background: linear-gradient(135deg, #0d1b2a, #1b263b);">
+        <i class="fas fa-chart-simple" style="font-size: 3rem; color: var(--accent);"></i>
+      </div>
+      <div class="project-content">
+        <div class="project-tags">
+          <span class="tag">EJS</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+        <div class="project-title">Cooperative Analytics Hub</div>
+        <div class="project-desc">Advanced analytics extension for cooperatives: interactive dashboards, dividend calculations, real-time member activity, exportable reports — empowering informed decisions for cooperative leaders.</div>
+        <div class="project-links">
+          <a href="#" class="project-link">Explore →</a>
+          <a href="https://github.com/nshimiyimana-2007" class="project-link">Code →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-inner reveal">
+    <h2 class="contact-big">Let's <span class="outline">Collaborate</span><br>Globally</h2>
+    <p class="contact-sub">Have a cooperative project, academic system, or custom web solution in mind? Let's bring it to life.</p>
+    <div class="contact-details">
+      <div class="contact-detail-item">
+        <i class="fas fa-phone-alt"></i>
+        <span class="click-to-copy" data-copy="0791721333">📞 +250 791 721 333</span>
+      </div>
+      <div class="contact-detail-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:nshimiyimanaarsene4@gmail.com" class="click-to-copy" data-copy="nshimiyimanaarsene4@gmail.com">📧 nshimiyimanaarsene4@gmail.com</a>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/nshimiyimana-2007" target="_blank" class="social-link">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.instagram.com/arsene5369/" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.facebook.com/arsene.nshimiyimana.arsene/" target="_blank" class="social-link">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 ARSENE NSHIMIYIMANA — Full-Stack Developer (PHP, Node.js, Academic & Cooperative Solutions)</span>
+  <span>⚡ Innovation · Integrity · Impact</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
